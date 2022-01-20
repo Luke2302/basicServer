@@ -3,6 +3,8 @@
 
 using namespace std;
 
+const int port = 8080;
+
 int main(){
     cout << "Server Started";
 
@@ -19,5 +21,11 @@ int main(){
     }
 
     cout << "Socket Created Successfully";
+
+    //Bind the Socket by assigning transport address 
+
+    //Mark the socket to Listen
+
+
     return 0;
 }
