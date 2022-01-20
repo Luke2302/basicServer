@@ -1,0 +1,7 @@
+.vscode/
+client.dSYM/
+server.dSYM/
+
+#Ignore Binary Files
+server
+client

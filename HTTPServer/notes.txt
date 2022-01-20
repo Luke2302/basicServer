@@ -1,0 +1,50 @@
+HTTP
+
+The Open Systems Interconnection model (OSI model) is a conceptual model that characterizes and standardizes 
+the communication functions of a telecommunication or computing system without regard to its underlying internal
+structure and technology. 
+
+Its goal is the interoperability of diverse communication systems with standard protocols.The model partitions a 
+communication system into abstraction layers. 
+
+The original version of the model defined seven layers.
+
+To implement a HTTP Server, we only care about the 4th Layer - The Transport Layer
+
+Transport Layer
+
+The Transport layer is primarily responsible for ensuring that data is transferred from one point to another
+reliably and without errors. For example, the Transport layer makes sure data are sent and received in the correct 
+sequence.
+
+The Transport layer provides flow control and error handling, and participates in solving problems concerned with 
+the transmission and reception of packets. Common examples of Transport layer protocols are 
+Transmission Control Protocol (TCP), User Datagram Protocol (UDP) and Sequenced Packet Exchange (SPX).
+
+We mainly use TCP in the transport layer.
+
+The Internet Engineering Task Force (IETF) and Internet Society (ISOC) produce Request for Comment (RFC) publications 
+The IETF adopts some of the RFC as "Internet Standards", providing specifications, communications protocols,
+procedures and events. 
+
+HTTP is standardised in some of these RFCs.
+
+Implementing TCP/ Programming with TCP/IP sockets
+
+The code we will be implementing is for UNIX-based systems like macOS and Linux. 
+Only implementation code for TCP differs for Windows from UNIX. But implementation of HTTP server is 
+same because we have to follow some specific guidelines from HTTP RFC which is language independent!
+
+There are a few steps involved in using sockets:
+
+A socket is the mechanism that most popular operating systems provide to give programs access to the network. 
+It allows messages to be sent and received between applications (unrelated processes) on different networked machines.
+
+
+- Create the socket
+- Identify the socket
+- On the server, wait for an incoming connection
+- Send and receive messages
+- Close the socket
+
+
